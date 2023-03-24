@@ -1,11 +1,9 @@
 abstract class Race {
-  private static _numberOfRaces = 0;
   private _name:string;
   private _dexterity:number;
   constructor(name:string, dexterity:number) {
     this._name = name;
     this._dexterity = dexterity;
-    Race._numberOfRaces += 1;
   }
 
   get name():string {
